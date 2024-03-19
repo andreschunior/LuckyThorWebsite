@@ -1,0 +1,316 @@
+/* Estilos personalizados */
+
+body {
+    background-image: url('/Images/fondo\ pagina\ web.jpg'); /* Reemplaza 'ruta/a/tu/imagen/background-image.jpg' con la ruta correcta a tu imagen */
+    overflow-x: hidden !important; 
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('../styles/Fuentes/Norse.otf') format('truetype'); /* Reemplaza 'ruta/a/tu/fuente.ttf' con la ruta correcta a tu fuente */
+}
+
+.navbar-nav .nav-link {
+    vertical-align: middle; /* Alineación vertical */
+    margin-right: 2em; /* Espacio a la derecha */
+    letter-spacing: 1px; /* Espaciado entre letras */
+   color: gold; 
+    font-family: "IM Fell English SC", serif;
+    font-size: 1.5em;
+    line-height: 1.5em; /* Ajustar la altura de línea al tamaño del texto */
+    
+}
+
+
+.navbar-nav {
+    margin-left: auto; /* Mueve los elementos de navegación hacia la derecha */
+}
+
+@media (max-width: 992px) { /* Ajusta este valor según el punto de interrupción que estés utilizando para tu barra de navegación */
+    .navbar-nav .nav-link {
+        font-size: 1.5em;
+    }
+}
+
+#containerBienvenida{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#BienvenidaH1{
+    color: white;
+    text-align: center;
+    margin-top: -2em;
+}
+
+#textoBienvenida{
+    color:white;
+    font-size: 1.3em;
+    text-align:justify;
+    margin-top: 2em;
+    line-height: 2;
+    margin-right: 5em;
+    margin-left: 5em;
+
+}
+
+/* seccion2 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#containerHidromiel{
+    background-image: url('/Images/fondo2.jpg');
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el contenedor */
+    background-position: center; /* Posición de la imagen de fondo */
+    height: 100vh; /* Alto del contenedor igual al alto de la ventana del navegador */
+    display: flex;
+    padding: 0;
+}
+
+#tituloSeccion2{
+    color: gold;
+    margin-top: 1em;
+    font-size: 4em;
+    max-width: 100%;
+    margin-left: 2em;
+    white-space: nowrap;
+    
+}
+
+#textoHidromiel{
+    color: gray;
+    max-width: 100%;
+    margin-left: 6em;
+    font-size: 1.4em;
+    
+}
+
+#hidromielImagen{
+
+    margin-left: 35em;
+    margin-right: 10em;
+}
+
+#cascos{
+    margin-top: -3em;
+    margin-left: 5em;
+  
+}
+
+#redesSociales{
+    margin-left:  5em;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5em;
+}
+
+#textoContainerElaboracion2 {
+    background-color: rgba(255, 215, 0, 0.7) !important; /* gold con opacidad 0.7 */
+    color: white;
+    padding: 10px;
+    width: 50%;
+    transition: height 5s ease-in-out;
+}
+
+#textoContainerElaboracion2 h5 {
+    color: white;
+    padding: 10px;
+    max-width: 100%;
+}
+
+#textoContainerElaboracion2 p {
+    max-width: 90%;
+} 
+
+#textoContainerElaboracion {
+    background-color: rgba(255, 215, 0, 0.7) !important; /* gold con opacidad 0.7 */
+    color: white;
+    padding: 10px;
+    width: 50%;
+    transition: height 5s ease-in-out;
+}
+
+#textoContainerElaboracion h5 {
+    color: white;
+    padding: 10px;
+    max-width: 90%;
+}
+
+#textoContainerElaboracion p {
+    max-width: 90%;
+} 
+
+
+#contenedorTarjeta1{
+    margin-top: 5em;
+}
+
+#contenedorTarjeta2{
+    margin-top: 5em;
+    margin-left: 10em;
+    margin-bottom: 2em;
+}
+
+#textoContainerElaboracion p, #textoContainerElaboracion2 p {
+    max-height: 0; /* Oculta el texto <p> inicialmente */
+    overflow: hidden; /* Asegura que el texto no se desborde */
+    transition: max-height 0.5s ease-in-out; /* Añade una transición suave a la propiedad max-height */
+    
+}
+#textoContainerElaboracion:hover p, #textoContainerElaboracion2:hover p {
+    max-height: 15em; /* Muestra el texto <p> cuando se pasa el cursor sobre el contenedor */
+}
+
+
+@media only screen and (max-width: 768px) {
+   
+
+    #containerBienvenida{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+
+    #BienvenidaH1{
+        color: white;
+        text-align: center;
+        margin-bottom:  em;
+    }
+    
+    #textoBienvenida{
+        color:white;
+        font-size: 0.9em;
+        text-align:center;
+        margin-top: 2em;
+        line-height: 2;
+        margin-right: 5em;
+        margin-left: 5em;
+        width: 20em;
+    }
+
+
+        /* parte 2 de la pagina */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #containerHidromiel{
+            background-image: url('/Images/fondo2.jpg');
+            background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el contenedor */
+            background-position: center; /* Posición de la imagen de fondo */
+            height: 100vh; /* Alto del contenedor igual al alto de la ventana del navegador */
+            width: 100vw;
+            display: flex;
+            padding: 0;
+        }
+        
+        #tituloSeccion2 {
+            color: gold;
+            margin-top: 1em;
+            font-size: 3em;
+            max-width: 42%;
+            margin-left: 0.6em;
+            white-space: wrap;
+            
+        }
+        
+        #textoHidromiel{
+            color: gray;
+            max-width: 30%;
+            margin-left: 2em;
+            font-size: 1em;
+            
+        }
+        
+        #hidromielImagen{
+        
+            margin-left: -30em;
+            margin-right: 0em;
+            margin-top: 26em;
+            height: 25em;
+        }
+        
+        #cascos{
+            margin-top: 2em;
+            width: 15em;
+            margin-left: 0em;
+          
+        }
+        
+
+        /* parte 3 de la pagina */
+        .row {
+            flex-direction: column;
+        }
+        /* Restaura el ancho a 100% para ocupar todo el espacio disponible */
+        .col {
+            width: 100%;
+        }
+        #contenedorTarjeta2{
+            margin-top: 5em;
+            margin-left: 0em;
+            margin-bottom: 2em;
+            user-select: none; /* Evita que el texto se pueda seleccionar */
+        }
+        #textoContainerElaboracion p {
+            max-width: 100%;
+        } 
+
+        #textoContainerElaboracion, #textoContainerElaboracion2 {
+            user-select: none; /* Evita que el texto se pueda seleccionar */
+        }
+
+      #textoContainerElaboracion.expanded, #textoContainerElaboracion2.expanded {
+    width: 100%; /* Expande el contenedor cuando se toca */
+}
+
+/* fondo */
+body {
+    background-image: url('/Images/fondo\ pagina\ web.jpg'); /* Reemplaza 'ruta/a/tu/imagen/background-image.jpg' con la ruta correcta a tu imagen */
+ 
+    background-position: center; /* Centra la imagen de fondo */
+    overflow-x: hidden !important; 
+    position: relative;
+
+}
+html {
+    overflow-x: hidden;
+}
+
+
+/* footer */
+#redesSociales{
+    margin-left:  -0em;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2em;
+}
+
+
+    }
+
+
+
+
+
+
+

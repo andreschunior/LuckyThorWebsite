@@ -1,5 +1,15 @@
 /* Estilos personalizados */
 
+  /* Definir la animación */
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
 body {
     background-image: url("../fondo\ pagina\ web.jpg"); /* Reemplaza 'ruta/a/tu/imagen/background-image.jpg' con la ruta correcta a tu imagen */
     overflow-x: hidden !important; 
@@ -33,6 +43,44 @@ body {
     }
 }
 
+#cuernoContainer{
+   display: grid;
+   place-items: center;
+}
+
+#cuerno{
+
+    width: 20vw;
+   
+}
+
+#cuerno:active {
+    animation: shake 0.2s;
+    animation-iteration-count: infinite;
+}
+
+#cuerno.shake {
+    animation: shake 0.2s;
+    animation-iteration-count: infinite;
+}
+
+
+#textoCuerno{
+    color: gold;
+    width: 50%;
+    text-align: center;
+}
+
+.accordion {
+    display: none;
+    transition: max-height 0.5s ease-out;
+    
+}
+.accordion.active {
+    max-height: 1000px; /* Ajusta este valor según el contenido de tu acordeón */
+}
+
+
 #containerBienvenida{
     height: 100vh;
     display: flex;
@@ -44,7 +92,7 @@ body {
 #BienvenidaH1{
     color: white;
     text-align: center;
-    margin-top: -2em;
+    margin-top: 0em;
 }
 
 #textoBienvenida{
